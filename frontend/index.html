@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CreditoJus - Marketplace de créditos judiciais" />
+    <meta name="keywords" content="créditos judiciais, precatórios, marketplace, processo judicial, investimento" />
+    <meta name="author" content="CreditoJus" />
+    <title>CreditoJus - Marketplace de Créditos Judiciais</title>
+    
+    <!-- Preconnect para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonte Inter do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph para compartilhamento em redes sociais -->
+    <meta property="og:title" content="CreditoJus - Marketplace de Créditos Judiciais" />
+    <meta property="og:description" content="Transforme seus créditos judiciais em dinheiro agora ou invista em processos com alto potencial de retorno." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creditojus.com.br" />
+    <meta property="og:image" content="https://creditojus.com.br/img/og-image.jpg" />
+    
+    <!-- Tema da barra de navegação em dispositivos móveis -->
+    <meta name="theme-color" content="#2563eb" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Script de medição de desempenho -->
+    <script>
+      window.addEventListener('load', () => {
+        if ('performance' in window) {
+          const paintMetrics = performance.getEntriesByType('paint');
+          if (paintMetrics.length > 0) {
+            console.log('Métricas de desempenho:', {
+              FCP: paintMetrics.find(p => p.name === 'first-contentful-paint')?.startTime,
+              LCP: performance.getEntriesByType('largest-contentful-paint')[0]?.startTime
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
