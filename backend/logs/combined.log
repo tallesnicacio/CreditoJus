@@ -10,3 +10,24 @@
 {"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-21 15:46:49"}
 {"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 15:46:49"}
 {"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 15:46:49"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-21 16:22:08"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 16:22:08"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 16:22:08"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-21 16:27:14"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 16:27:14"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 16:27:14"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-21 16:33:49"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 16:33:49"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 16:33:49"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-21 16:47:30"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 16:47:30"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 16:47:30"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-21 17:06:56"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 17:06:56"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 17:06:56"}
+{"level":"info","message":"Servidor rodando na porta 3002","service":"creditojus-api","timestamp":"2025-03-21 17:14:09"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 17:14:09"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 17:14:09"}
+{"level":"info","message":"Servidor rodando na porta 3002","service":"creditojus-api","timestamp":"2025-03-21 18:08:40"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 18:08:40"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 18:08:40"}

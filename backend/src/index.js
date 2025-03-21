@@ -21,7 +21,7 @@ const { upload, handleMulterError } = require('./middlewares/uploadMiddleware');
 
 // Criar o app Express
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 
 // Conectar ao MongoDB
 mongoose.connect(dbConfig.uri, dbConfig.options)

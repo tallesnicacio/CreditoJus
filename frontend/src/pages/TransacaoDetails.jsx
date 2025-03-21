@@ -7,7 +7,7 @@ import {
   formatarMoeda, 
   formatarData, 
   formatarStatusTransacao,
-  formatarCPFCNPJ 
+  formatarCpfCnpj 
 } from '../utils/formatters';
 
 const TransacoesDetails = () => {

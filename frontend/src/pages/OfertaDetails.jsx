@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import Sidebar from '../components/Sidebar';
-import { ofertaService, mensagemService, transacaoService } from '../services/api';
+import { ofertaService, transacaoService } from '../services/api';
 import { formatarMoeda, formatarStatusOferta, formatarData } from '../utils/formatters';
 
 const OfertaDetails = () => {
