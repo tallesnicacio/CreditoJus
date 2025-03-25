@@ -6,7 +6,16 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 10000, // Adiciona timeout de 10 segundos
 });
+
+// Função para limpar dados de autenticação
+const limparDadosAutenticacao = () => {
+  localStorage.removeItem('token');
+  localStorage.removeItem('refreshToken');
+  localStorage.removeItem('user');
+  window.location.href = '/login';
+};
 
 // Interceptador para adicionar o token de autenticação em todas as requisições
 api.interceptors.request.use(
@@ -25,72 +34,69 @@ api.interceptors.request.use(
 // Interceptador para tratamento de erros de resposta
 api.interceptors.response.use(
   (response) => response,
-  (error) => {
+  async (error) => {
+    const originalRequest = error.config;
+
     // Tratamento de erro 401 (não autorizado)
     if (error.response && error.response.status === 401) {
-      // Verificar se o erro é de token expirado
-      if (error.response.data.error?.code === 'TOKEN_EXPIRED') {
-        // Tenta renovar o token usando o refresh token
-        return refreshTokenAndRetry(error);
+      // Evitar loop infinito de refresh
+      if (originalRequest._retry) {
+        limparDadosAutenticacao();
+        return Promise.reject(error);
       }
-      
-      // Caso contrário, desloga o usuário
-      localStorage.removeItem('token');
-      localStorage.removeItem('refreshToken');
-      localStorage.removeItem('user');
-      
-      // Redireciona para o login
-      window.location.href = '/login';
+
+      originalRequest._retry = true;
+
+      try {
+        const refreshToken = localStorage.getItem('refreshToken');
+        
+        if (!refreshToken) {
+          throw new Error('Refresh token não encontrado');
+        }
+        
+        // Fazer requisição para renovar o token
+        const response = await axios.post(
+          `${api.defaults.baseURL}/auth/refresh-token`,
+          { refreshToken }
+        );
+        
+        // Armazenar os novos tokens
+        const { token, refreshToken: newRefreshToken } = response.data;
+        localStorage.setItem('token', token);
+        localStorage.setItem('refreshToken', newRefreshToken);
+        
+        // Atualizar o token no cabeçalho da requisição original
+        originalRequest.headers.Authorization = `Bearer ${token}`;
+        
+        // Repetir a requisição original
+        return api(originalRequest);
+      } catch (refreshError) {
+        // Se falhar ao renovar o token, desloga o usuário
+        limparDadosAutenticacao();
+        return Promise.reject(refreshError);
+      }
     }
     
     return Promise.reject(error);
   }
 );
 
-// Função para renovar o token e repetir a requisição
-async function refreshTokenAndRetry(error) {
-  try {
-    const refreshToken = localStorage.getItem('refreshToken');
-    
-    if (!refreshToken) {
-      // Se não tiver refresh token, desloga
-      throw new Error('Refresh token não encontrado');
-    }
-    
-    // Fazer requisição para renovar o token
-    const response = await axios.post(
-      `${api.defaults.baseURL}/auth/refresh-token`,
-      { refreshToken }
-    );
-    
-    // Armazenar os novos tokens
-    const { token, refreshToken: newRefreshToken } = response.data;
-    localStorage.setItem('token', token);
-    localStorage.setItem('refreshToken', newRefreshToken);
-    
-    // Repetir a requisição original com o novo token
-    const originalRequest = error.config;
-    originalRequest.headers.Authorization = `Bearer ${token}`;
-    
-    return api(originalRequest);
-  } catch (refreshError) {
-    // Se falhar ao renovar o token, desloga o usuário
-    localStorage.removeItem('token');
-    localStorage.removeItem('refreshToken');
-    localStorage.removeItem('user');
-    
-    // Redireciona para o login
-    window.location.href = '/login';
-    
-    return Promise.reject(refreshError);
-  }
-}
-
 // Serviços de autenticação
 export const authService = {
   async login(email, senha) {
-    const response = await api.post('/auth/login', { email, senha });
-    return response.data;
+    try {
+      const response = await api.post('/auth/login', { email, senha });
+      
+      // Armazenar dados de autenticação
+      localStorage.setItem('token', response.data.token);
+      localStorage.setItem('refreshToken', response.data.refreshToken);
+      localStorage.setItem('user', JSON.stringify(response.data.usuario));
+      
+      return response.data;
+    } catch (error) {
+      console.error('Erro de login:', error.response?.data || error.message);
+      throw error;
+    }
   },
   
   async register(userData) {
@@ -120,6 +126,28 @@ export const authService = {
 };
 
 // Serviços de processos
+export const datajudService = {
+  async buscarProcessoPorNumero(numeroProcesso) {
+    try {
+      const response = await api.get(`/datajud/processo/${numeroProcesso}`);
+      return response.data;
+    } catch (error) {
+      console.error('Erro ao buscar processo:', error);
+      throw error;
+    }
+  },
+  
+  async buscarProcessosPorCPF(cpf) {
+    try {
+      const response = await api.get(`/datajud/processos-cpf/${cpf}`);
+      return response.data;
+    } catch (error) {
+      console.error('Erro ao buscar processos por CPF:', error);
+      throw error;
+    }
+  }
+};
+
 export const processoService = {
   async listarMeusProcessos(params) {
     const response = await api.get('/processos', { params });

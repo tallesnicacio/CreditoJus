@@ -31,3 +31,346 @@
 {"level":"info","message":"Servidor rodando na porta 3002","service":"creditojus-api","timestamp":"2025-03-21 18:08:40"}
 {"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 18:08:40"}
 {"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 18:08:40"}
+{"level":"info","message":"Servidor rodando na porta 3003","service":"creditojus-api","timestamp":"2025-03-21 18:41:59"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 18:41:59"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 18:41:59"}
+{"level":"info","message":"Servidor rodando na porta 3003","service":"creditojus-api","timestamp":"2025-03-21 18:57:08"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 18:57:08"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 18:57:08"}
+{"level":"info","message":"Servidor rodando na porta 3003","service":"creditojus-api","timestamp":"2025-03-21 19:12:34"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-21 19:12:34"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-21 19:12:34"}
+{"level":"info","message":"Servidor rodando na porta 3003","service":"creditojus-api","timestamp":"2025-03-23 09:01:18"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-23 09:01:18"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-23 09:01:18"}
+{"level":"info","message":"Servidor rodando na porta 3003","service":"creditojus-api","timestamp":"2025-03-23 09:33:16"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-23 09:33:16"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-23 09:33:16"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":24,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-23 09:33:33","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3003","service":"creditojus-api","timestamp":"2025-03-23 09:42:13"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-23 09:42:13"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-23 09:42:13"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":12,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-23 09:42:41","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 12:50:23"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 12:50:23"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 12:50:23"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":11,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 12:51:20","url":"/api/auth/login"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":3,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 12:51:43","url":"/api/auth/login"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":14,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 12:52:40","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 12:53:02"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 12:53:02"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 12:53:02"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":13,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 12:53:20","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 13:04:16"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 13:04:16"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 13:04:16"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":12,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 13:04:30","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 13:07:07"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 13:07:07"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 13:07:07"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":12,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 13:07:19","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 13:07:41"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 13:07:41"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 13:07:41"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 13:08:05"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 13:08:05"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 13:08:05"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":10,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 13:08:08","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3000","service":"creditojus-api","timestamp":"2025-03-24 14:00:03"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 14:00:03"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 14:00:03"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":27,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 14:00:48","url":"/api/auth/login"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-24 14:01:12","url":"/api/auth/login"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-24 14:42:04"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 14:42:04"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 14:42:04"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":187,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:42:49","url":"/api/auth/login"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":16,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:42:49","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":10,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:42:49","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:42:49","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:42:49","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":10,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:42:49","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:42:49","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":8,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:42:56","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:42:56","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":9,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:43:11","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:43:11","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:43:11","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:43:11","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:50:09","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:50:09","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:50:57","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:50:57","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:51:37","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":8,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:37","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:51:39","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:39","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:40","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:40","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:40","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:40","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:40","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:40","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:41","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:41","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:41","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:41","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:42","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:42","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:43","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:43","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":8,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:44","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:45","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:45","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:46","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:46","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:48","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:48","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:48","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:48","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:48","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:51:48","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":147,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 14:53:01","url":"/api/auth/login"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:01","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:01","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:01","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:01","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:01","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:01","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:06","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":9,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:06","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":8,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:16","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":8,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:16","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:25","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:25","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:35","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:35","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:35","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:35","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:35","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:53:35","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":9,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:58:17","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":9,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:58:17","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:58:20","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:58:20","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:58:23","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 14:58:23","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":3,"service":"creditojus-api","statusCode":400,"timestamp":"2025-03-24 14:58:59","url":"/api/processos"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":36,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-24 15:00:45","url":"/api/processos"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":7,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-24 15:03:24","url":"/api/processos"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":8,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-24 15:14:35","url":"/api/processos"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":19,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 15:15:32","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:15:32","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":10,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-24 15:15:45","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:15:45","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":27,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-24 15:16:22","url":"/api/processos"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:16:35","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:16:35","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:16:43","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:16:43","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":14,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:50:57","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":12,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:50:57","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:50:58","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 15:50:58","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:02:04","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:02:04","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:02:04","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:02:04","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:02:04","url":"/api/auth/me"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-24 16:07:34"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 16:07:34"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 16:07:34"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:07:38","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:07:38","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:07:38","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:07:38","url":"/api/auth/me"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-24 16:10:16"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 16:10:16"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 16:10:16"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":16,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:19","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:19","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:19","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:19","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:20","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:20","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:21","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:21","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:21","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:21","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:21","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:10:21","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":11,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:45","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:45","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:48","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:48","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:48","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:48","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:48","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:16:48","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:17:59","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:17:59","url":"/api/auth/me"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-24 16:37:29"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 16:37:29"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 16:37:29"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:37:40","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:37:40","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:39:21","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:39:21","url":"/api/auth/me"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-24 16:46:22"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 16:46:22"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 16:46:22"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:47:24","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:47:24","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-24 16:47:35","url":"/api/datajud/processo/0020002-57.2019.8.08.0347"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":0,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-24 16:47:49","url":"/api/datajud/processo/0020002-57.2019.8.08.0347"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:52:01","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":10,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:52:01","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":1,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-24 16:52:05","url":"/api/datajud/processo/0020002-57.2019.8.08.0347"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-24 16:56:15"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-24 16:56:15"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-24 16:56:15"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:20","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:20","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:27","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:27","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:27","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:27","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:27","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 16:56:27","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":0,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-24 16:56:35","url":"/api/datajud/processo/0020002-57.2019.8.08.0347"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:48","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:48","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:48","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:48","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:48","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:48","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:49","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:49","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:49","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:49","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:50","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:50","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:51","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:51","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:51","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:51","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:52","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:52","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:52","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:08:52","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:02","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:02","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:03","url":"/api/transacoes?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:04","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:04","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:05","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:05","url":"/api/processos?pagina=1&limite=12&status=&tipo=&valorMin=&valorMax=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:06","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-24 17:09:06","url":"/api/ofertas/recebidas?pagina=1&limite=10&status=&processo=&valorMin=&valorMax=&dataInicio=&dataFim=&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"POST","responseTime":162,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 08:05:40","url":"/api/auth/login"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:05:40","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:05:40","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:05:40","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":2,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:05:40","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:05:40","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:05:40","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:37:10","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:37:10","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":1,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:38:14","url":"/api/datajud/processo/0013900-77.2003.5.170121"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":0,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:39:29","url":"/api/datajud/processo/00012665920128080048"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":0,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:39:42","url":"/api/datajud/processo/0504457-82.2011.4.05.8107"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:50:56","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:50:56","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":0,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:53:38","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 08:53:49"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 08:53:49"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 08:53:49"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:53:53","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:53:53","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":1,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:53:56","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":1,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:54:02","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":0,"service":"creditojus-api","statusCode":404,"timestamp":"2025-03-25 08:54:22","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:58:13","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 08:58:13","url":"/api/auth/me"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 08:58:33"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 08:58:33"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 08:58:33"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":22,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 09:00:31","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":10,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:00:31","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":9,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 09:00:31","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":8,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:00:31","url":"/api/processos?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 09:00:31","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:00:31","url":"/api/ofertas/recebidas?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 09:00:31","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":7,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:00:31","url":"/api/transacoes?limite=3&ordenar=recentes"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":324,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:00:39","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:01:38"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:01:38"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:01:38"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":17,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:01:49","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:01:49","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":273,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:02:13","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:05:54"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:05:54"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:05:54"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":311,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:07:34","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:09:14"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:09:14"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:09:14"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":6,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:09:19","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:10:14"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:10:14"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:10:14"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":234,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:10:20","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":188,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:16:50","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:17:01"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:17:01"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:17:01"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":279,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:17:05","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:17:56"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:17:56"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:17:56"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":531,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 09:18:01","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":142,"service":"creditojus-api","statusCode":200,"timestamp":"2025-03-25 09:20:02","url":"/api/datajud/processo/0826610-40.2023.8.19.0202"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":16,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:22:35","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:22:35","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:24:32","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:24:32","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":249,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:25:27","url":"/api/datajud/processo/0826610-40.2023.8.19.0202"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":476,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:38:44","url":"/api/datajud/processo/0826610-40.2023.8.19.0202"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:38:57"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:38:57"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:38:57"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":18,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:39:00","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:39:00","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":269,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:39:08","url":"/api/datajud/processo/0826610-40.2023.8.19.0202"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":127,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:39:34","url":"/api/datajud/processo/0826610-40.2023.8.19.0202"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:42:26","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:42:26","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:44:07","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:44:07","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":707,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:44:55","url":"/api/datajud/processo/0826610-40.2023.8.19.0202"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":133,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:47:48","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":190,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:49:03","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":3,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:49:15","url":"/api/datajud/processo/00186760420148080035"}
+{"level":"info","message":"Servidor rodando na porta 3001","service":"creditojus-api","timestamp":"2025-03-25 09:49:28"}
+{"level":"info","message":"Ambiente: development","service":"creditojus-api","timestamp":"2025-03-25 09:49:28"}
+{"level":"info","message":"Conectado ao MongoDB com sucesso","service":"creditojus-api","timestamp":"2025-03-25 09:49:28"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":23,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:49:31","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":9,"service":"creditojus-api","statusCode":304,"timestamp":"2025-03-25 09:49:31","url":"/api/auth/me"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":4,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:49:35","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}
+{"ip":"::1","level":"info","message":"API Access","method":"GET","responseTime":5,"service":"creditojus-api","statusCode":500,"timestamp":"2025-03-25 09:51:15","url":"/api/datajud/processo/0018676-04.2014.8.08.0035"}

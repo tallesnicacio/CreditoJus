@@ -2,13 +2,74 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Stepper from '../components/Stepper';
-import { processoService } from '../services/api';
 import { formatarMoeda } from '../utils/formatters';
+import { processoService, datajudService } from '../services/api';
 
 const ProcessForm = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const isEditing = !!id;
+  const [nenhumResultado, setNenhumResultado] = useState(false);
+
+
+  // Método de busca no DataJud
+  const buscarProcessoDatajud = async () => {
+    console.log('Método buscarProcessoDatajud iniciado');
+    console.log('Número do processo:', processoData.numero);
+  
+    if (!processoData.numero) {
+      setError('Informe o número do processo');
+      return;
+    }
+  
+    try {
+      setBuscandoDatajud(true);
+      setError(null);
+      setNenhumResultado(false);
+      
+      console.log('Chamando datajudService');
+      const resultados = await datajudService.buscarProcessoPorNumero(processoData.numero);
+  
+      if (resultados && resultados.length > 0) {
+        const processoImportado = resultados[0];
+  
+        setDadosDatajud({
+          ...processoImportado,
+          fonte: 'DataJud'
+        });
+  
+        setProcessoData(prevData => ({
+          ...prevData,
+          tipo: processoImportado.tipo || prevData.tipo,
+          tribunal: processoImportado.tribunal || prevData.tribunal,
+          vara: processoImportado.vara || prevData.vara,
+          cidade: processoImportado.cidade || prevData.cidade,
+          estado: processoImportado.estado || prevData.estado,
+          fase: processoImportado.fase || prevData.fase,
+          valorCausa: processoImportado.valorCausa?.toString() || prevData.valorCausa,
+          valorEstimado: processoImportado.valorEstimado?.toString() || prevData.valorEstimado,
+          descricao: processoImportado.descricao || prevData.descricao,
+          expectativaRecebimento: processoImportado.expectativaRecebimento || prevData.expectativaRecebimento
+        }));
+      } else {
+        setNenhumResultado(true);
+      }
+    } catch (err) {
+      console.error('Erro detalhado:', {
+        message: err.message,
+        response: err.response?.data,
+        status: err.response?.status
+      });
+  
+      setError(
+        err.response?.data?.error ||
+        'Não foi possível importar os dados do processo. Verifique o número e tente novamente.'
+      );
+    } finally {
+      setBuscandoDatajud(false);
+    }
+  };
+  
   
   // Etapas do formulário
   const steps = [
@@ -24,6 +85,8 @@ const ProcessForm = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [dadosDatajud, setDadosDatajud] = useState(null);
+  const [buscandoDatajud, setBuscandoDatajud] = useState(false);
   
   // Estado para dados do processo
   const [processoData, setProcessoData] = useState({
@@ -188,31 +251,41 @@ const ProcessForm = () => {
       setSubmitting(true);
       setError(null);
       
-      // Converter valores para número
-      const dataToSend = {
+      // Log detalhado
+      console.log('Dados enviados:', {
         ...processoData,
         valorCausa: processoData.valorCausa ? parseFloat(processoData.valorCausa) : undefined,
         valorEstimado: processoData.valorEstimado ? parseFloat(processoData.valorEstimado) : undefined,
         valorMinimo: processoData.valorMinimo ? parseFloat(processoData.valorMinimo) : undefined
-      };
-      
+      });
+  
       let response;
       
       if (isEditing) {
-        response = await processoService.atualizar(id, dataToSend);
+        response = await processoService.atualizar(id, {
+          ...processoData,
+          valorCausa: parseFloat(processoData.valorCausa),
+          valorEstimado: parseFloat(processoData.valorEstimado),
+          valorMinimo: processoData.valorMinimo ? parseFloat(processoData.valorMinimo) : null
+        });
       } else {
-        response = await processoService.cadastrar(dataToSend);
+        response = await processoService.cadastrar({
+          ...processoData,
+          valorCausa: parseFloat(processoData.valorCausa),
+          valorEstimado: parseFloat(processoData.valorEstimado),
+          valorMinimo: processoData.valorMinimo ? parseFloat(processoData.valorMinimo) : null
+        });
       }
       
-      // Atualizar dados do processo
+      console.log('Resposta do servidor:', response);
+      
       setProcessoData(prev => ({
         ...prev,
-        _id: prev._id || response.processo._id // Salvar ID se for novo processo
+        _id: prev._id || response.processo._id
       }));
       
       setSuccess(true);
       
-      // Navegar para próxima etapa ou página de detalhes
       if (navigate) {
         window.location.href = `/processos/${id || response.processo._id}`;
       }
@@ -220,8 +293,18 @@ const ProcessForm = () => {
       return response.processo;
       
     } catch (err) {
-      console.error('Erro ao salvar dados do processo:', err);
-      setError(err.response?.data?.error || 'Falha ao salvar dados do processo. Tente novamente mais tarde.');
+      console.error('Erro detalhado ao salvar processo:', {
+        message: err.message,
+        response: err.response?.data,
+        status: err.response?.status
+      });
+      
+      setError(
+        err.response?.data?.error || 
+        err.response?.data?.message || 
+        'Falha ao salvar dados do processo'
+      );
+      
       return null;
     } finally {
       setSubmitting(false);
@@ -323,27 +406,78 @@ const ProcessForm = () => {
               {currentStep === 0 && (
                 <div className="p-6">
                   <h2 className="text-lg font-semibold text-gray-800 mb-4">Dados do Processo</h2>
+                  {/* Importação do DataJud */}
+                  <div className="mb-4 flex items-center justify-end">
+                </div>
+                {nenhumResultado && (
+                  <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0">
+                        <svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="ml-3">
+                        <h3 className="text-sm font-semibold text-yellow-800">Nenhum processo encontrado</h3>
+                        <p className="text-sm text-yellow-700">
+                          Não encontramos informações para o número informado no DataJud. Verifique se está correto ou preencha os dados manualmente.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}   
+
+                  {/* Dados importados do DataJud */}
+                  {dadosDatajud && (
+                    <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-4">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0">
+                          <svg className="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="ml-3">
+                          <h3 className="text-sm font-semibold text-green-800">Dados Importados do DataJud</h3>
+                          <p className="text-sm text-green-700">
+                            Verifique as informações importadas e complete os dados necessários.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="mt-2 text-sm text-green-700">
+                        <p><strong>Fonte:</strong> {dadosDatajud.fonte}</p>
+                      </div>
+                    </div>
+                  )}
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="numero" className="block text-gray-700 text-sm font-bold mb-2">
-                        Número do Processo *
-                      </label>
-                      <input
-                        type="text"
-                        id="numero"
-                        name="numero"
-                        value={processoData.numero}
-                        onChange={handleChange}
-                        placeholder="0000000-00.0000.0.00.0000"
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        required
-                      />
-                      <p className="text-gray-500 text-xs mt-1">
-                        Digite no formato CNJ (ex: 0000000-00.0000.0.00.0000)
-                      </p>
-                    </div>
-                    
+                  <div className="md:col-span-2">
+                  <label htmlFor="numero" className="block text-gray-700 text-sm font-bold mb-2">
+                    Número do Processo *
+                  </label>
+                  <div className="flex space-x-2">
+                    <input
+                      type="text"
+                      id="numero"
+                      name="numero"
+                      value={processoData.numero}
+                      onChange={handleChange}
+                      placeholder="0000000-00.0000.0.00.0000"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 flex-1 focus:outline-none focus:shadow-outline"
+                      required
+                    />
+                    <button
+                      type="button"
+                      onClick={buscarProcessoDatajud}
+                      disabled={buscandoDatajud}
+                      className="btn-secondary px-4 py-2 rounded text-white bg-purple-600 hover:bg-purple-700 disabled:opacity-50"
+                    >
+                      {buscandoDatajud ? 'Buscando...' : 'Importar'}
+                    </button>
+                  </div>
+                  <p className="text-gray-500 text-xs mt-1">
+                    Digite no formato CNJ (ex: 0000000-00.0000.0.00.0000)
+                  </p>
+                </div>                 
                     <div>
                       <label htmlFor="tipo" className="block text-gray-700 text-sm font-bold mb-2">
                         Tipo de Processo *
@@ -859,8 +993,8 @@ const ProcessForm = () => {
                 </div>
               )}
               
-              {/* Botões de navegação */}
-              <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex justify-between">
+             {/* Botões de navegação */}
+             <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex justify-between">
                 {currentStep > 0 ? (
                   <button
                     type="button"

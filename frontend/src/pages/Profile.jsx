@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import Sidebar from '../components/Sidebar';
 import { authService as userService } from '../services/api';
-import { formatarCpfCnpj, formatarTelefone } from '../utils/formatters';
+import { formatarCPFCNPJ } from '../utils/formatters';
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const Profile = () => {
 
   const carregarDadosUsuario = async () => {
     try {
-      const dadosCompletos = await userService.buscarPerfil();
+      const dadosCompletos = await userService.getProfile();
       setFormData({
         nome: dadosCompletos.nome || '',
         email: dadosCompletos.email || '',

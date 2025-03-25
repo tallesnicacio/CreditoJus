@@ -11,6 +11,7 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const unlinkAsync = promisify(fs.unlink);
+const DatajudService = require('../services/datajudService');
 
 // Função auxiliar para validar número de processo no formato CNJ
 const validarNumeroCNJ = (numero) => {
@@ -19,7 +20,7 @@ const validarNumeroCNJ = (numero) => {
   return regexCNJ.test(numero);
 };
 
-const processoController = {
+module.exports = {
   /**
    * Cadastrar um novo processo
    */
@@ -34,14 +35,30 @@ const processoController = {
         estado,
         fase,
         valorCausa,
-        valorEstimado,
+        valorEstimado,  // Aqui é onde o problema ocorre
         descricao,
         expectativaRecebimento,
         valorMinimo,
         isConfidencial
       } = req.body;
-
+  
       const usuarioId = req.userId; // ID do usuário autenticado
+  
+      // Validações de valores numéricos
+      const valorCausaNumerico = parseFloat(valorCausa);
+      const valorEstimadoNumerico = parseFloat(valorEstimado);
+      const valorMinimoNumerico = valorMinimo ? parseFloat(valorMinimo) : null;
+  
+      // Verificar se os valores numéricos são válidos
+      if (isNaN(valorCausaNumerico) || isNaN(valorEstimadoNumerico)) {
+        return res.status(400).json({ 
+          error: 'Valores numéricos inválidos',
+          detalhes: {
+            valorCausa: valorCausa,
+            valorEstimado: valorEstimado
+          }
+        });
+      }
 
       // Verificar se o usuário é um vendedor
       const usuario = await Usuario.findById(usuarioId);
@@ -69,14 +86,14 @@ const processoController = {
         cidade,
         estado,
         fase,
-        valorCausa: parseFloat(valorCausa),
-        valorEstimado: parseFloat(valorEstimado),
+        valorCausa: valorCausaNumerico,
+        valorEstimado: valorEstimadoNumerico,
         descricao,
         expectativaRecebimento,
-        valorMinimo: valorMinimo ? parseFloat(valorMinimo) : null,
+        valorMinimo: valorMinimoNumerico,
         isConfidencial: isConfidencial || false,
         usuario: usuarioId,
-        status: 'pendente', // Processo começa como pendente até ser validado
+        status: 'pendente',
         temOfertas: false,
         documentos: [],
         dataCadastro: new Date(),
@@ -86,14 +103,17 @@ const processoController = {
           observacao: 'Processo cadastrado'
         }]
       });
-
+  
       return res.status(201).json({
         processo,
         message: 'Processo cadastrado com sucesso! Agora adicione os documentos necessários para validação.'
       });
     } catch (err) {
-      console.error('Erro ao cadastrar processo:', err);
-      return res.status(500).json({ error: 'Falha ao cadastrar processo' });
+      console.error('Erro detalhado ao cadastrar processo:', err);
+      return res.status(500).json({ 
+        error: 'Falha ao cadastrar processo',
+        detalhes: err.message
+      });
     }
   },
 
@@ -679,7 +699,53 @@ const processoController = {
       console.error('Erro ao validar processo:', err);
       return res.status(500).json({ error: 'Falha ao validar processo' });
     }
+},
+
+// Métodos para DataJud
+async buscarProcessoDatajud(req, res) {
+  console.log('Rota de busca de processo chamada');
+  console.log('Número do processo:', req.params.numeroProcesso);
+
+  try {
+    const { numeroProcesso } = req.params;
+    
+    // Log adicional
+    console.log('Iniciando busca no serviço DataJud');
+    
+    const resultado = await DatajudService.buscarProcessoPorNumero(numeroProcesso);
+    
+    console.log('Resultado obtido:', resultado);
+    
+    return res.json(resultado);
+  } catch (error) {
+    console.error('Erro detalhado no controlador:', {
+      message: error.message,
+      stack: error.stack
+    });
+    
+    return res.status(500).json({ 
+      error: 'Não foi possível recuperar os dados do processo',
+      detalhes: error.message 
+    });
+  }
+},
+
+  async buscarProcessosPorCPF(req, res) {
+    try {
+      const { cpf } = req.params;
+      
+      const processosEncontrados = await DatajudService.buscarProcessosPorCPF(cpf);
+      
+      return res.json({
+        processos: processosEncontrados,
+        fonte: 'DataJud'
+      });
+    } catch (error) {
+      console.error('Erro ao buscar processos por CPF:', error);
+      return res.status(500).json({ 
+        error: 'Não foi possível recuperar os processos',
+        detalhes: error.message 
+      });
+    }
   }
 };
-
-module.exports = processoController;

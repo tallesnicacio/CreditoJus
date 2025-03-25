@@ -80,64 +80,78 @@ const authController = {
   async login(req, res) {
     try {
       const { email, senha } = req.body;
-
-      // Buscar o usuário pelo email e incluir a senha para comparação
-      const usuario = await Usuario.findOne({ email }).select('+senha +tentativasLogin +bloqueadoAte');
-      
-      if (!usuario) {
-        return res.status(400).json({ error: 'Usuário não encontrado' });
+  
+      // Validações iniciais
+      if (!email || !senha) {
+        return res.status(400).json({ error: 'Email e senha são obrigatórios' });
       }
-
+  
+      // Buscar usuário com email case-insensitive
+      const usuario = await Usuario.findOne({ 
+        email: { $regex: new RegExp(`^${email.trim()}$`, 'i') } 
+      }).select('+senha +tentativasLogin +bloqueadoAte');
+  
+      if (!usuario) {
+        return res.status(401).json({ error: 'Credenciais inválidas' });
+      }
+  
       // Verificar se a conta está bloqueada
       if (usuario.bloqueadoAte && usuario.bloqueadoAte > new Date()) {
-        return res.status(401).json({ 
+        return res.status(403).json({ 
           error: 'Conta bloqueada temporariamente. Tente novamente mais tarde.',
           bloqueadoAte: usuario.bloqueadoAte
         });
       }
-
-      // Verificar se a senha está correta
-      if (!await bcrypt.compare(senha, usuario.senha)) {
+  
+      // Verificar senha
+      const senhaCorreta = await bcrypt.compare(senha, usuario.senha);
+  
+      if (!senhaCorreta) {
         // Incrementar tentativas de login
         usuario.tentativasLogin = (usuario.tentativasLogin || 0) + 1;
         
-        // Se excedeu o número máximo de tentativas, bloquear a conta
+        // Bloquear conta se exceder máximo de tentativas
         if (usuario.tentativasLogin >= authConfig.password.maxAttempts) {
           const lockTime = new Date();
           lockTime.setMinutes(lockTime.getMinutes() + authConfig.password.lockTime);
+          
           usuario.bloqueadoAte = lockTime;
           usuario.tentativasLogin = 0;
+          
           await usuario.save();
           
-          return res.status(401).json({ 
+          return res.status(403).json({ 
             error: 'Conta bloqueada temporariamente. Tente novamente mais tarde.',
             bloqueadoAte: lockTime
           });
         }
         
         await usuario.save();
-        return res.status(401).json({ error: 'Senha inválida' });
+        return res.status(401).json({ error: 'Credenciais inválidas' });
       }
-
-      // Resetar as tentativas de login após login bem-sucedido
+  
+      // Resetar tentativas de login
       usuario.tentativasLogin = 0;
       usuario.bloqueadoAte = null;
+      usuario.ultimoAcesso = new Date();
       await usuario.save();
-
-      // Remover a senha e as informações de bloqueio da resposta
-      usuario.senha = undefined;
-      usuario.tentativasLogin = undefined;
-      usuario.bloqueadoAte = undefined;
-
-      // Retornar os dados do usuário e o token
+  
+      // Preparar resposta sem dados sensíveis
+      const usuarioResponse = usuario.toObject();
+      delete usuarioResponse.senha;
+      delete usuarioResponse.tentativasLogin;
+      delete usuarioResponse.bloqueadoAte;
+  
+      // Gerar tokens
       return res.json({
-        usuario,
+        usuario: usuarioResponse,
         token: generateToken({ id: usuario.id, tipo: usuario.tipo }),
         refreshToken: generateRefreshToken(usuario.id)
       });
+  
     } catch (err) {
-      console.error('Erro ao fazer login:', err);
-      return res.status(500).json({ error: 'Falha ao fazer login' });
+      console.error('Erro no login:', err);
+      return res.status(500).json({ error: 'Erro interno no servidor' });
     }
   },
 

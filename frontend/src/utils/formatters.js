@@ -179,25 +179,24 @@ export const formatarExpectativaRecebimento = (expectativa) => {
   return expectativaMap[expectativa] || expectativa;
 };
 
-// Formata um CPF/CNPJ
-export const formatarCpfCnpj = (cpfCnpj) => {
-  if (!cpfCnpj) return '';
-  
-  // Remove caracteres não numéricos
-  const valor = cpfCnpj.replace(/\D/g, '');
-  
-  // CPF
-  if (valor.length === 11) {
-    return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+// Formatar CPF/CNPJ
+export function formatarCpfCnpj(documento) {
+  if (!documento) return '';
+
+  // Remove todos os caracteres não numéricos
+  const numero = documento.replace(/\D/g, '');
+
+  if (numero.length <= 11) {
+    // CPF: 123.456.789-01
+    return numero.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+  } else {
+    // CNPJ: 12.345.678/0001-90
+    return numero.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5');
   }
-  
-  // CNPJ
-  if (valor.length === 14) {
-    return valor.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5');
-  }
-  
-  return cpfCnpj;
-};
+}
+
+// Alias para manter compatibilidade
+export const formatarCPFCNPJ = formatarCpfCnpj;
 
 // Formata um número de telefone
 export const formatarTelefone = (telefone) => {

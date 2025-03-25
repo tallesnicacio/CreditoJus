@@ -16,13 +16,26 @@ const Login = () => {
     e.preventDefault();
     
     try {
-      setError('');
-      setLoading(true);
-      await login(email, senha);
+      console.log('Tentando login com:', { 
+        email, 
+        senha: senha.length ? '********' : 'VAZIO' 
+      });
+      
+      const response = await login(email, senha);
+      console.log('Resposta completa do login:', response);
+      
       navigate('/dashboard');
     } catch (err) {
-      setError('Falha ao fazer login. Verifique suas credenciais.');
-      console.error(err);
+      console.error('Erro de login detalhado:', {
+        message: err.message,
+        response: err.response?.data,
+        status: err.response?.status
+      });
+      
+      setError(
+        err.response?.data?.error || 
+        'Falha ao fazer login. Verifique suas credenciais.'
+      );
     } finally {
       setLoading(false);
     }

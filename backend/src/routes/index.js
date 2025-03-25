@@ -46,6 +46,12 @@ router.delete('/processos/:id', processoController.excluir);
 router.post('/processos/:id/documentos', uploadMiddleware.array('documentos', 10), processoController.adicionarDocumentos);
 router.delete('/processos/:id/documentos/:documentoId', processoController.removerDocumento);
 router.put('/processos/:id/validar', processoController.validarProcesso);
+router.get('/datajud/processo/:numeroProcesso', processoController.buscarProcessoDatajud);
+router.get('/datajud/processos-cpf/:cpf', processoController.buscarProcessosPorCPF);
+
+// Rotas do DataJud
+router.get('/datajud/processo/:numeroProcesso', processoController.buscarProcessoDatajud);
+router.get('/datajud/processos-cpf/:cpf', processoController.buscarProcessosPorCPF);
 
 // Rotas de ofertas
 router.post('/ofertas', ofertaController.criar);
